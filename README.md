@@ -1,44 +1,48 @@
-_s
+Old Fashioned
 ===
 
-Hi. I'm a starter theme called `_s`, or `underscores`, if you like. I'm a theme meant for hacking so don't use me as a Parent Theme. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
+Background
+--
+I've just started a new job at an agency and I've been looking around at different starter themes for WordPress. I need something that works for me and effectively allows me to cut down on my dev time and does things that I would normally do anyways.
 
-My ultra-minimal CSS might make me look like theme tartare but that means less stuff to get in your way when you're designing your awesome theme. Here are some of the other more interesting things you'll find here:
 
-* A just right amount of lean, well-commented, modern, HTML5 templates.
-* A helpful 404 template.
-* A sample custom header implementation in `inc/custom-header.php` that can be activated by uncommenting one line in functions.php and adding the code snippet found the comments of `inc/custom-header.php` to your `header.php` template.
-* Custom template tags in `inc/template-tags.php` that keep your templates clean and neat and prevent code duplication.
-* Some small tweaks in `inc/extras.php` that can improve your theming experience.
-* Keyboard navigation for image attachment templates. The script can be found in `js/keyboard-navigation.js`. It's enqueued in `functions.php`.
-* A script at `js/small-menu.js` that makes your menu a toggled dropdown on small screens (like your phone), ready for CSS artistry. It's enqueued in `functions.php`.
-* 2 sample CSS layouts in `layouts` for a sidebar on either side of your content.
-* Smartly organized starter CSS in `style.css` that will help you to quickly get your design off the ground.
-* Licensed under GPLv2 or later. :) Use it to make something cool.
+What I'm thinking of doing
+---
+- Forking _s by Automattic. It is basic, doesn't really do anything funny, and just works. I'm probably not opinionated enough to do my own markup yet.
+- Introduce sass - with bourbon and neat as submodules - bourbon has awesome mixins, and neat has a grid framework that will make responsive stuff totes awes.
+- Using http://typeplate.com/ for typography-related things.
+- Maybe including font-awesome (http://fortawesome.github.io/). 
+- Modifying the markup in _s to allow for responsive breakpoints and mixing neat in.
+- Adding a few templates - a ton of the designs that I've seen coming through, for instance, require an image grid. 
+- Using composer to include advanced custom fields and maybe a few other nice-to-haves.
+- Eventually maybe introducing coffeescript. Nothing is too insane with what we're working on to do with javascript, so this 
+might not ever happen. 
 
-Getting Started
----------------
+What I want to focus on
+--
+- Making sure our build process becomes faster and therefore making a case my boss that using ThemeForest themes for everything 
+isn't the best solution in the world
+- Having theme options for minor layout changes.
 
-If you want to keep it simple, head over to http://underscores.me and generate your `_s` based theme from there. You just input the name of the theme you want to create, click the "Generate" button, and you get your ready-to-awesomize starter theme.
+What I want to not happen.
+--
+- Not having options for theme colours or logos or unenecessary things. I hate theme options. 
+- Not having shortcodes. Shortcodes are evil. Well, maybe not. But I don't like shortcodes. 
+- Not creating some rockstar theme that does everything. I want to build something that works well in an agency context.
+- Not making this the most undeniably hipster-new-tech theme ever. Focus on getting things done. 
 
-If you want to set things up manually, download `_s` from github. The first thing you want to do is copy the `_s` directory and change the name to something else - Like, say, `megatherium` - then you'll need to do a five-step find and replace on the name in all the templates.
+Deployment
+--
+It would be totes awes to have an auto-minifcation gem or script in here as well as something that auto-compiled scss. I'm shite - at ruby, so I might take initiative to learn something here as I'm not a fan of the php stuff available for SCSS.
 
-1. Search for `'_s'` (inside single quotations) to capture the text domain.
-2. Search for `_s_` to capture all the function names.
-3. Search for <code>&nbsp;_s</code> (with a space before it) to capture DocBlocks.
-4. Search for `_s-` to capture prefixed handles.
-5. Search for `Text Domain: _s` in style.css.
 
-OR
 
-* Search for: `'_s'` and replace with: `'megatherium'`
-* Search for: `_s_` and replace with: `megatherium_`
-* Search for: <code>&nbsp;_s</code> and replace with: <code>&nbsp;Megatherium</code>
-* Search for: `_s-` and replace with: `megatherium-`
-* Search for: `Text Domain: _s` and replace with: `Text Domain: megatherium` in style.css.
+Conventions I'd like to follow
+--
+- BEM - to a degree. I'm probably going to mess this up the first time, but I think it should be best practice. A drop in library for different components or aspects of the site would be awesome
+- Others TBD
 
-Then, update the stylesheet header in style.css and the links in footer.php with your own information. Next, update or delete this readme.
 
-Now you're ready to go! The next step is easy to say but harder to do: make an awesome WordPress theme. :)
-
-Good luck!
+Notes
+--
+- We do a ton of stuff for music-related jobs, so there's probably going to be a bit of focus around that.
