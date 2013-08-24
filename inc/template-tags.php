@@ -15,7 +15,7 @@ function oldf_content_nav( $nav_id ) {
 	global $wp_query, $post;
 
 	// Don't print empty markup on single pages if there's nowhere to navigate.
-	if ( isoldfingle() ) {
+	if ( is_single() ) {
 		$previous = ( is_attachment() ) ? get_post( $post->post_parent ) : get_adjacent_post( false, '', true );
 		$next = get_adjacent_post( false, '', false );
 
@@ -24,16 +24,16 @@ function oldf_content_nav( $nav_id ) {
 	}
 
 	// Don't print empty markup in archives if there's only one page.
-	if ( $wp_query->max_num_pages < 2 && ( is_home() || is_archive() || isoldfearch() ) )
+	if ( $wp_query->max_num_pages < 2 && ( is_home() || is_archive() || is_search() ) )
 		return;
 
-	$nav_class = ( isoldfingle() ) ? 'post-navigation' : 'paging-navigation';
+	$nav_class = ( is_single() ) ? 'post-navigation' : 'paging-navigation';
 
 	?>
 	<nav role="navigation" id="<?php echo esc_attr( $nav_id ); ?>" class="<?php echo $nav_class; ?>">
 		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'oldf' ); ?></h1>
 
-	<?php if ( isoldfingle() ) : // navigation links for single posts ?>
+	<?php if ( is_single() ) : // navigation links for single posts ?>
 
 		<?php previous_post_link( '<div class="nav-previous">%link</div>', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'oldf' ) . '</span> %title' ); ?>
 		<?php next_post_link( '<div class="nav-next">%link</div>', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'oldf' ) . '</span>' ); ?>
