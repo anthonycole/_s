@@ -53,13 +53,6 @@ function oldf_setup() {
 	 */
 	add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link' ) );
 
-	/**
-	 * Setup the WordPress core custom background feature.
-	 */
-	add_theme_support( 'custom-background', apply_filters( 'oldf_custom_background_args', array(
-		'default-color' => 'ffffff',
-		'default-image' => '',
-	) ) );
 }
 endif; // oldfoldfetup
 add_action( 'after_setup_theme', 'oldf_setup' );
