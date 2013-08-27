@@ -32,6 +32,7 @@ Planned Introductions
 - Advanced Custom Fields (http://www.advancedcustomfields.com/)
 - Typeplate (http://typeplate.com/)
 - font-awesome (http://fontawesome.github.io/)
+- web-fonts.scss (https://github.com/rosspenman/web-fonts.scss) - Awesome google fonts.
 - A custom function for handling asset URLs
 
 Todo
