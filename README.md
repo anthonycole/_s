@@ -22,7 +22,7 @@ What I've done
 - Forked _s and modified namespaces.
 - Included neat and bourbon
 
-Assets Used
+External Assets Used
 ---
 - Bourbon - http://bourbon.io/
 - Neat - http://neat.bourbon.io/
@@ -41,11 +41,7 @@ Todo
 - Modifying the markup in _s to allow for responsive breakpoints and mixing neat in.
 - Adding a few templates - a ton of the designs that I've seen coming through, for instance, require an image grid. 
 - Using composer to include advanced custom fields and maybe a few other nice-to-have plugins.
-
-Layout (Assets folder)
----
-- scss
-* style.scss
+- Structure assets library like this - http://thesassway.com/beginner/how-to-structure-a-sass-project
 
 What I want to focus on
 ---
