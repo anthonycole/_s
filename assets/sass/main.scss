@@ -16,6 +16,12 @@ This theme, like WordPress, is licensed under the GPL. It's based off of _s by A
 https://github.com/automattic/_s
 
 */
+
+
+/* Mixins */
+@import "mixins/web-fonts";
+
+/* Partials */
 @import "partials/reset";
 @import "partials/base";
 @import "partials/layout";

@@ -16,6 +16,17 @@ This theme, like WordPress, is licensed under the GPL. It's based off of _s by A
 https://github.com/automattic/_s
 
 */
+/* Mixins */
+/*
+ * Taken from https://github.com/rosspenman/web-fonts.scss/blob/master/web-fonts.scss
+ * This is a fairly big mixin.
+ * The reason for this is that at the time of writing (09/01/2013),
+ * Sass does not include functions for substring or find/replace in string.
+ * Chris Eppstein sent a Pull Request to Sass with the str-extract (substring) function back in June,
+ * but it still has not been merged, due to lack of minor comments.
+ * That was five months ago.
+ */
+/* Partials */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
