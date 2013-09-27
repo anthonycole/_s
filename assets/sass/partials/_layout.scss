@@ -1,0 +1,28 @@
+.site {
+	@include outer-container;
+	@include pad();
+
+	.site-header {
+		@include span-columns(12);
+
+		.site-branding {
+			@include span-columns(3);
+		}
+
+		.main-navigation {
+			@include span-columns(9);
+		}
+	}
+
+	.content-area {
+		@include span-columns(9);
+	}
+
+	.widget-area {
+		@include span-columns(3)
+	}
+
+	.site-footer {
+		@include span-columns(12);
+	}
+}
