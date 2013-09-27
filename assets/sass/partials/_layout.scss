@@ -19,7 +19,11 @@
 	}
 
 	.widget-area {
-		@include span-columns(3)
+		@include span-columns(3);
+
+		.widget {
+			@include pad();
+		}
 	}
 
 	.site-footer {

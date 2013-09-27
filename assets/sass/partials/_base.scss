@@ -1,3 +1,11 @@
+
+// Visual grid layout - using this in development.
+
+$visual-grid: true;
+$visual-grid-color: pink;
+$visual-grid-opacity: 0.4;
+$visual-grid-index: front;
+
 @import "bourbon/bourbon";
 @import "neat/neat";
 
