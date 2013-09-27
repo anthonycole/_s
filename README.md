@@ -41,7 +41,8 @@ Todo
 - Modifying the markup in _s to allow for responsive breakpoints and mixing neat in.
 - Adding a few templates - a ton of the designs that I've seen coming through, for instance, require an image grid. 
 - Using composer to include advanced custom fields and maybe a few other nice-to-have plugins.
-- Structure assets library like this - http://thesassway.com/beginner/how-to-structure-a-sass-project
+- Structure sass directory like this - http://thesassway.com/beginner/how-to-structure-a-sass-project
+- Introduce Compass
 
 What I want to focus on
 ---
