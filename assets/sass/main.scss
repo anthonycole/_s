@@ -16,6 +16,7 @@ This theme, like WordPress, is licensed under the GPL. It's based off of _s by A
 https://github.com/automattic/_s
 
 */
-
-@import "bourbon/bourbon";
-@import "neat/neat";
+@import "partials/reset";
+@import "partials/base";
+@import "partials/layout";
+@import "partials/typography";
